@@ -1,0 +1,22 @@
+{
+  "name": "image-cationing-lstm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/YanniEtchi237/Image-Cationing-LSTM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YanniEtchi237/Image-Cationing-LSTM/issues"
+  },
+  "homepage": "https://github.com/YanniEtchi237/Image-Cationing-LSTM#readme",
+  "dependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
