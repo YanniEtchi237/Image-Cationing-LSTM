@@ -1,10 +1,17 @@
 // backend/server.js
 const express = require('express');
 const multer  = require('multer');
+const fs = require('fs');
+const bodyParser = require('body-parser');
 const { spawn } = require('child_process');
 
 const app = express();
 const port = 3001;
+
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(express.static('./public'));
 
 const upload = multer({ dest: 'uploads/' });
 
@@ -18,7 +25,17 @@ app.post('/upload', upload.single('image'), (req, res) => {
   pythonProcess.stdout.on('data', (data) => {
     console.log(`Python stdout: ${data}`);
     res.json({ prediction: data.toString() });
+
+    fs.unlink(imagePath, (err) => {
+        if (err) {
+          console.error(`Error deleting file: ${err}`);
+        } else {
+          console.log(`Deleted file: ${imagePath}`);
+        }
+      });
   });
+
+  
 
   pythonProcess.stderr.on('data', (data) => {
     console.error(`Python stderr: ${data}`);
