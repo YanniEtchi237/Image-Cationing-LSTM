@@ -1,0 +1,73 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  #fileInput {
+    margin-bottom: 10px;
+  }
+  
+  #uploadButton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #uploadButton:hover {
+    background-color: #0056b3;
+  }
+  
+  #predictionResult {
+    margin-top: 20px;
+  }
+  
+  /* Animation */
+  .hidden {
+    display: none;
+  }
+  
+  #imageContainer {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  #imageContainer.show {
+    opacity: 1;
+  }
+
+  /* style.css */
+/* style.css */
+.file-drop-area {
+    border: 2px dashed #007bff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the upload area */
+    cursor: pointer;
+  }
+  
+  .file-drop-text {
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .file-drop-area:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  
+  
+    
