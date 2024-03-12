@@ -101,9 +101,9 @@ if __name__ == "__main__":
     image_path = sys.argv[1]
     #load resnet
 
-    resnet = load_model("./models/resnet.h5")
+    resnet = load_model("./models/resnet.keras")
 
-    lstm = load_model("./models/model.h5")
+    lstm = load_model("./models/model.keras")
 
     #extract image features
 

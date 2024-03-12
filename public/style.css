@@ -19,6 +19,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    border-top: 20px ;
   }
   
   #uploadButton:hover {
@@ -49,9 +50,11 @@ body {
     border: 2px dashed #007bff;
     padding: 20px;
     border-radius: 5px;
-    width: 300px; /* Adjust width as needed */
+    width: 800px; /* Adjust width as needed */
     margin: 0 auto; /* Center the upload area */
     cursor: pointer;
+    height: 300px;
+    margin-bottom: 20px;
   }
   
   .file-drop-text {
